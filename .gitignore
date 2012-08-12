@@ -1,0 +1,5 @@
+*.swp
+*.class
+*.tmp*
+.project
+.settings
