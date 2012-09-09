@@ -1,0 +1,55 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.visionarysoftwaresolutions</groupId>
+	<artifactId>menu</artifactId>
+	<packaging>jar</packaging>
+	<version>1.0</version>
+	<name>Menu</name>
+	<url>http://www.github.com/leadVisionary/menu</url>
+	<description>A simple library for Menus, using the Composite Pattern. </description>
+	<inceptionYear>April 2012</inceptionYear>
+	<organization>
+		<name>Visionary Software Solutions</name>
+		<url>http://www.visionarysoftwaresolutions.com</url>
+	</organization>
+	<scm>
+		<url>http://www.github.com/leadVisionary/Menu</url>
+	</scm>
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.10</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+	<distributionManagement>
+		<repository>
+			<id>repo</id>
+			<url>https://github.com/leadVisionary/mvn-repo/raw/master/releases</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshot-repo</id>
+			<url>https://github.com/leadVisionary/mvn-repo/raw/master/snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
+	<repositories>
+		<repository>
+			<releases>
+				<enabled>true</enabled>
+				<updatePolicy>always</updatePolicy>
+				<checksumPolicy>warn</checksumPolicy>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+				<updatePolicy>never</updatePolicy>
+				<checksumPolicy>fail</checksumPolicy>
+			</snapshots>
+			<id>vssRepo</id>
+			<name>Visionary Software Solutions Repository</name>
+			<url>https://github.com/leadVisionary/mvn-repo</url>
+			<layout>default</layout>
+		</repository>
+	</repositories>
+</project>
